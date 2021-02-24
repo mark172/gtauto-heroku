@@ -1,0 +1,15 @@
+current directory: /Users/Mark.Evangelista/Rails/gtauto-heroku/vendor/bundle/ruby/2.7.0/gems/regexp_property_values-1.0.0/ext/regexp_property_values
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/bin/ruby -I /Users/Mark.Evangelista/.rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20210224-56131-cna4y6.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Mark.Evangelista/Rails/gtauto-heroku/vendor/bundle/ruby/2.7.0/gems/regexp_property_values-1.0.0/ext/regexp_property_values
+make "DESTDIR=" clean
+
+current directory: /Users/Mark.Evangelista/Rails/gtauto-heroku/vendor/bundle/ruby/2.7.0/gems/regexp_property_values-1.0.0/ext/regexp_property_values
+make "DESTDIR="
+compiling regexp_property_values.c
+linking shared-object regexp_property_values/regexp_property_values.bundle
+
+current directory: /Users/Mark.Evangelista/Rails/gtauto-heroku/vendor/bundle/ruby/2.7.0/gems/regexp_property_values-1.0.0/ext/regexp_property_values
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 regexp_property_values.bundle ./.gem.20210224-56131-etoxwl/regexp_property_values

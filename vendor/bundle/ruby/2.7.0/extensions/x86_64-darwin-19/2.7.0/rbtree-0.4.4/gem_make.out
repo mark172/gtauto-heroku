@@ -1,0 +1,101 @@
+current directory: /Users/Mark.Evangelista/Rails/gtauto-heroku/vendor/bundle/ruby/2.7.0/gems/rbtree-0.4.4
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/bin/ruby -I /Users/Mark.Evangelista/.rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20210224-56131-127l9dr.rb extconf.rb
+checking for rb_exec_recursive() in ruby.h... yes
+checking for rb_exec_recursive_paired() in ruby.h... yes
+checking for rb_proc_lambda_p() in ruby.h... yes
+checking for rb_ary_resize() in ruby.h... yes
+checking for rb_obj_hide() in ruby.h... yes
+checking for rb_safe_level() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/Mark.Evangelista/Rails/gtauto-heroku/vendor/bundle/ruby/2.7.0/gems/rbtree-0.4.4
+make "DESTDIR=" clean
+
+current directory: /Users/Mark.Evangelista/Rails/gtauto-heroku/vendor/bundle/ruby/2.7.0/gems/rbtree-0.4.4
+make "DESTDIR="
+compiling dict.c
+compiling rbtree.c
+rbtree.c:168:24: warning: incompatible pointer types passing 'VALUE (VALUE *)' (aka 'unsigned long (unsigned long *)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-pointer-types]
+    result = rb_ensure(rbtree_user_cmp_body, (VALUE)&args,
+                       ^~~~~~~~~~~~~~~~~~~~
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1990:24: note: passing argument to parameter here
+VALUE rb_ensure(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE),VALUE);
+                       ^
+rbtree.c:169:24: warning: incompatible pointer types passing 'VALUE (rbtree_t *)' (aka 'unsigned long (rbtree_t *)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-pointer-types]
+                       rbtree_user_cmp_ensure, (VALUE)rbtree);
+                       ^~~~~~~~~~~~~~~~~~~~~~
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1990:46: note: passing argument to parameter here
+VALUE rb_ensure(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE),VALUE);
+                                             ^
+rbtree.c:376:15: warning: incompatible pointer types passing 'VALUE (rbtree_insert_arg_t *)' (aka 'unsigned long (rbtree_insert_arg_t *)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-pointer-types]
+    rb_ensure(insert_node_body, (VALUE)&arg,
+              ^~~~~~~~~~~~~~~~
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1990:24: note: passing argument to parameter here
+VALUE rb_ensure(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE),VALUE);
+                       ^
+rbtree.c:377:15: warning: incompatible pointer types passing 'VALUE (rbtree_insert_arg_t *)' (aka 'unsigned long (rbtree_insert_arg_t *)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-pointer-types]
+              insert_node_ensure, (VALUE)&arg);
+              ^~~~~~~~~~~~~~~~~~
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1990:46: note: passing argument to parameter here
+VALUE rb_ensure(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE),VALUE);
+                                             ^
+rbtree.c:632:22: warning: incompatible pointer types passing 'VALUE (rbtree_each_arg_t *)' (aka 'unsigned long (rbtree_each_arg_t *)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-pointer-types]
+    return rb_ensure(rbtree_each_body, (VALUE)&each_arg,
+                     ^~~~~~~~~~~~~~~~
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1990:24: note: passing argument to parameter here
+VALUE rb_ensure(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE),VALUE);
+                       ^
+rbtree.c:644:22: warning: incompatible pointer types passing 'VALUE (rbtree_each_arg_t *)' (aka 'unsigned long (rbtree_each_arg_t *)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-pointer-types]
+    return rb_ensure(rbtree_each_body, (VALUE)&each_arg,
+                     ^~~~~~~~~~~~~~~~
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1990:24: note: passing argument to parameter here
+VALUE rb_ensure(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE),VALUE);
+                       ^
+rbtree.c:948:22: warning: incompatible pointer types passing 'VALUE (rbtree_remove_if_arg_t *)' (aka 'unsigned long (rbtree_remove_if_arg_t *)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-pointer-types]
+    return rb_ensure(rbtree_remove_if_body, (VALUE)&arg,
+                     ^~~~~~~~~~~~~~~~~~~~~
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1990:24: note: passing argument to parameter here
+VALUE rb_ensure(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE),VALUE);
+                       ^
+rbtree.c:949:22: warning: incompatible pointer types passing 'VALUE (rbtree_remove_if_arg_t *)' (aka 'unsigned long (rbtree_remove_if_arg_t *)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-pointer-types]
+                     rbtree_remove_if_ensure, (VALUE)&arg);
+                     ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1990:46: note: passing argument to parameter here
+VALUE rb_ensure(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE),VALUE);
+                                             ^
+rbtree.c:1569:26: warning: incompatible pointer types passing 'VALUE (rbtree_bound_arg_t *)' (aka 'unsigned long (rbtree_bound_arg_t *)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-pointer-types]
+        return rb_ensure(rbtree_bound_body, (VALUE)&arg,
+                         ^~~~~~~~~~~~~~~~~
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1990:24: note: passing argument to parameter here
+VALUE rb_ensure(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE),VALUE);
+                       ^
+rbtree.c:1736:53: warning: incompatible pointer types passing 'VALUE (VALUE, pp_pair_arg_t *)' (aka 'unsigned long (unsigned long, pp_pair_arg_t *)') to parameter of type 'rb_block_call_func_t' (aka 'unsigned long (*)(unsigned long, unsigned long, int, const unsigned long *, unsigned long)') [-Wincompatible-pointer-types]
+    return rb_iterate(pp_group, (VALUE)&group_args, pp_value, (VALUE)pair_arg);
+                                                    ^~~~~~~~
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1984:60: note: passing argument to parameter here
+VALUE rb_iterate(VALUE(*)(VALUE),VALUE,rb_block_call_func_t,VALUE);
+                                                           ^
+rbtree.c:1765:46: warning: incompatible pointer types passing 'VALUE (VALUE, pp_pair_arg_t *)' (aka 'unsigned long (unsigned long, pp_pair_arg_t *)') to parameter of type 'rb_block_call_func_t' (aka 'unsigned long (*)(unsigned long, unsigned long, int, const unsigned long *, unsigned long)') [-Wincompatible-pointer-types]
+    rb_iterate(pp_group, (VALUE)&group_args, pp_pair, (VALUE)&pair_arg);
+                                             ^~~~~~~
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1984:60: note: passing argument to parameter here
+VALUE rb_iterate(VALUE(*)(VALUE),VALUE,rb_block_call_func_t,VALUE);
+                                                           ^
+rbtree.c:1796:46: warning: incompatible pointer types passing 'VALUE (VALUE, pp_rbtree_arg_t *)' (aka 'unsigned long (unsigned long, pp_rbtree_arg_t *)') to parameter of type 'rb_block_call_func_t' (aka 'unsigned long (*)(unsigned long, unsigned long, int, const unsigned long *, unsigned long)') [-Wincompatible-pointer-types]
+    rb_iterate(pp_group, (VALUE)&group_args, pp_each_pair, (VALUE)rbtree_arg);
+                                             ^~~~~~~~~~~~
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1984:60: note: passing argument to parameter here
+VALUE rb_iterate(VALUE(*)(VALUE),VALUE,rb_block_call_func_t,VALUE);
+                                                           ^
+rbtree.c:1823:53: warning: incompatible pointer types passing 'VALUE (VALUE, pp_rbtree_arg_t *)' (aka 'unsigned long (unsigned long, pp_rbtree_arg_t *)') to parameter of type 'rb_block_call_func_t' (aka 'unsigned long (*)(unsigned long, unsigned long, int, const unsigned long *, unsigned long)') [-Wincompatible-pointer-types]
+    return rb_iterate(pp_rbtree_group, (VALUE)&arg, pp_rbtree, (VALUE)&arg);
+                                                    ^~~~~~~~~
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1984:60: note: passing argument to parameter here
+VALUE rb_iterate(VALUE(*)(VALUE),VALUE,rb_block_call_func_t,VALUE);
+                                                           ^
+13 warnings generated.
+linking shared-object rbtree.bundle
+
+current directory: /Users/Mark.Evangelista/Rails/gtauto-heroku/vendor/bundle/ruby/2.7.0/gems/rbtree-0.4.4
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 rbtree.bundle ./.gem.20210224-56131-3p5ink

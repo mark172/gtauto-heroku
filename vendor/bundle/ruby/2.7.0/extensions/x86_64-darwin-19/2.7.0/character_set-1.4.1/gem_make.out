@@ -1,0 +1,30 @@
+current directory: /Users/Mark.Evangelista/Rails/gtauto-heroku/vendor/bundle/ruby/2.7.0/gems/character_set-1.4.1/ext/character_set
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/bin/ruby -I /Users/Mark.Evangelista/.rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20210224-56131-wpl36y.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Mark.Evangelista/Rails/gtauto-heroku/vendor/bundle/ruby/2.7.0/gems/character_set-1.4.1/ext/character_set
+make "DESTDIR=" clean
+
+current directory: /Users/Mark.Evangelista/Rails/gtauto-heroku/vendor/bundle/ruby/2.7.0/gems/character_set-1.4.1/ext/character_set
+make "DESTDIR="
+compiling character_set.c
+In file included from character_set.c:1:
+In file included from /Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:2521:20: warning: 'diagnose_if' is a clang extension [-Wgcc-compat]
+    __attribute__((diagnose_if(rb_scan_args_count(fmt)<0,"bad scan arg format","error")))
+                   ^
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:2522:20: warning: 'diagnose_if' is a clang extension [-Wgcc-compat]
+    __attribute__((diagnose_if(rb_scan_args_count(fmt)!=varc,"variable argument length doesn't match","error")))
+                   ^
+character_set.c:93:8: warning: use of GNU statement expression extension [-Wgnu-statement-expression]
+  cs = TypedData_Make_Struct(klass, struct cs_data, &cs_type, data);
+       ^
+/Users/Mark.Evangelista/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1239:62: note: expanded from macro 'TypedData_Make_Struct'
+#define TypedData_Make_Struct(klass, type, data_type, sval) ({\
+                                                             ^
+3 warnings generated.
+linking shared-object character_set/character_set.bundle
+
+current directory: /Users/Mark.Evangelista/Rails/gtauto-heroku/vendor/bundle/ruby/2.7.0/gems/character_set-1.4.1/ext/character_set
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 character_set.bundle ./.gem.20210224-56131-1kt7jrk/character_set
