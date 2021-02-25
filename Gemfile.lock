@@ -231,7 +231,6 @@ PLATFORMS
 
 DEPENDENCIES
   animate-rails
-  bundler (~> 1.17)
   byebug
   client_side_validations
   client_side_validations-simple_form
