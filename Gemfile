@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 #ruby '2.7.2'
-ruby '2.6.6'
+#ruby '2.6.6'
 
 #gem 'bundler', '~> 1.17'
 #gem 'bundler', '~> 1.17', '>= 1.17.1'
